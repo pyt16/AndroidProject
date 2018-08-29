@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/mvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView1"
+        android:textColor="#000"
+        android:textSize="9pt"
+        android:text="영화제목"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/mvstory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mvrelease"
+        android:layout_marginBottom="-35dp"
+        android:layout_toEndOf="@+id/imageView1"
+        android:text="내용"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#666666"
+        android:textSize="7pt" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/mvrelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개봉여부"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/mvdate"
+        android:layout_marginTop="35dp"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/mvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentRight="true"
+        android:textSize="7pt"
+        android:textColor="#6e6e6e"
+        android:text="개봉날짜"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+</RelativeLayout>
